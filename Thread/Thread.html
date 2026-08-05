@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Practice Problems: Java Threading Concepts</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:black;
+    color:#FFD700;
+    font-family:Arial, Helvetica, sans-serif;
+    padding:30px 70px;
+}
+
+h1{
+    text-align:center;
+    color:white;
+    font-size:52px;
+    margin-bottom:40px;
+    text-shadow:3px 3px 5px gray;
+}
+
+.level{
+    display:inline-block;
+    background-color:#F5EFE3;
+    color:blue;
+    padding:8px 30px;
+    font-size:28px;
+    font-weight:bold;
+    margin:40px 0 20px 0;
+}
+
+ol{
+    margin-left:25px;
+}
+
+li{
+    font-size:28px;
+    margin-bottom:10px;
+    line-height:1.5;
+}
+
+input[type="checkbox"]{
+    width:20px;
+    height:20px;
+    margin-right:8px;
+    cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Practice Problems: Java Threading Concepts</h1>
+
+<!-- Level 1 -->
+<div class="level">Level 1 : Basics (Creating Threads)</div>
+
+<ol>
+<li><input type="checkbox">Create a thread by extending the Thread class and print numbers from 1 to 10.</li>
+<li><input type="checkbox">Create a thread using the Runnable interface and display "Hello Thread" 5 times.</li>
+<li><input type="checkbox">Create two threads that print even and odd numbers separately.</li>
+<li><input type="checkbox">Create a thread that displays the current time every second for 10 seconds.</li>
+<li><input type="checkbox">Create a thread that prints the multiplication table of a given number.</li>
+<li><input type="checkbox">Create three threads representing different students submitting assignments.</li>
+<li><input type="checkbox">Create a thread that prints alphabets (A–Z) with a delay of 500ms.</li>
+<li><input type="checkbox">Create a thread that calculates the sum of numbers from 1 to 100.</li>
+<li><input type="checkbox">Create two threads displaying different messages simultaneously.</li>
+<li><input type="checkbox">Create a thread that simulates a loading bar using sleep().</li>
+</ol>
+
+
+<!-- Level 2 -->
+<div class="level">Level 2 : Thread Methods</div>
+
+<ol>
+<li><input type="checkbox">Demonstrate the use of sleep() method.</li>
+<li><input type="checkbox">Demonstrate the use of join() method using two threads.</li>
+<li><input type="checkbox">Demonstrate the use of yield() method.</li>
+<li><input type="checkbox">Display thread information using getName(), getId(), and isAlive().</li>
+<li><input type="checkbox">Change thread names using setName().</li>
+<li><input type="checkbox">Create a program to check thread priorities (MIN_PRIORITY, NORM_PRIORITY, MAX_PRIORITY).</li>
+<li><input type="checkbox">Use interrupt() to stop a sleeping thread.</li>
+<li><input type="checkbox">Create a timer thread that runs for 20 seconds.</li>
+<li><input type="checkbox">Demonstrate daemon threads using setDaemon(true).</li>
+<li><input type="checkbox">Create a countdown thread using sleep() and join().</li>
+</ol>
+
+
+<!-- Level 3 -->
+<div class="level">Level 3 : Synchronization</div>
+
+<ol>
+<li><input type="checkbox">Create two threads withdrawing money from the same bank account using synchronization.</li>
+<li><input type="checkbox">Implement synchronized methods in a counter class.</li>
+<li><input type="checkbox">Demonstrate race conditions without synchronization.</li>
+<li><input type="checkbox">Solve race conditions using synchronized blocks.</li>
+<li><input type="checkbox">Create multiple threads printing synchronized messages.</li>
+<li><input type="checkbox">Implement producer-consumer synchronization using wait() and notify().</li>
+<li><input type="checkbox">Create a ticket booking system using synchronization.</li>
+<li><input type="checkbox">Create a synchronized printer shared by multiple users.</li>
+<li><input type="checkbox">Implement synchronized deposit and withdrawal methods in a BankAccount class.</li>
+<li><input type="checkbox">Create a synchronized online shopping cart.</li>
+</ol>
+
+
+<!-- Level 4 -->
+<div class="level">Level 4 : Inter-Thread Communication</div>
+
+<ol>
+<li><input type="checkbox">Implement Producer-Consumer problem using wait() and notify().</li>
+<li><input type="checkbox">Create two threads where one waits for user input and another processes it.</li>
+<li><input type="checkbox">Implement a thread-safe message box.</li>
+<li><input type="checkbox">Simulate a traffic signal system using wait() and notify().</li>
+<li><input type="checkbox">Create a thread communication program using notifyAll().</li>
+<li><input type="checkbox">Implement a classroom attendance system using inter-thread communication.</li>
+<li><input type="checkbox">Create a restaurant order management system using threads.</li>
+<li><input type="checkbox">Implement a bounded buffer problem.</li>
+<li><input type="checkbox">Create a thread that waits until another thread completes a calculation.</li>
+<li><input type="checkbox">Implement multiple consumers accessing a shared resource.</li>
+</ol>
+
+
+<!-- Level 5 -->
+<div class="level">Level 5 : Thread Pool & Executors</div>
+
+<ol>
+<li><input type="checkbox">Create a fixed thread pool using ExecutorService.</li>
+<li><input type="checkbox">Execute 10 tasks using a thread pool of size 3.</li>
+<li><input type="checkbox">Demonstrate shutdown() and shutdownNow().</li>
+<li><input type="checkbox">Create a cached thread pool and execute multiple tasks.</li>
+<li><input type="checkbox">Create a scheduled thread pool that executes tasks periodically.</li>
+<li><input type="checkbox">Implement a file downloader using thread pools.</li>
+<li><input type="checkbox">Simulate a food delivery system using ExecutorService.</li>
+<li><input type="checkbox">Create a calculator service that handles multiple requests simultaneously.</li>
+<li><input type="checkbox">Compare thread creation with thread pool performance.</li>
+<li><input type="checkbox">Create a mini task scheduler using ScheduledExecutorService.</li>
+</ol>
+
+
+<!-- Level 6 -->
+<div class="level">Level 6 : Advanced Threading Concepts</div>
+
+<ol>
+<li><input type="checkbox">Implement the Dining Philosophers problem.</li>
+<li><input type="checkbox">Solve the Readers-Writers problem.</li>
+<li><input type="checkbox">Create a Deadlock scenario using two shared resources.</li>
+<li><input type="checkbox">Solve the Deadlock problem using proper lock ordering.</li>
+<li><input type="checkbox">Implement ReentrantLock in a banking application.</li>
+<li><input type="checkbox">Demonstrate the use of Semaphore for resource management.</li>
+<li><input type="checkbox">Implement CountDownLatch for thread synchronization.</li>
+<li><input type="checkbox">Create a multiplayer game lobby simulation using CyclicBarrier.</li>
+<li><input type="checkbox">Implement AtomicInteger for thread-safe counting.</li>
+<li><input type="checkbox">Compare synchronized methods with ReentrantLock.</li>
+</ol>
+
+
+<!-- Level 7 -->
+<div class="level">Level 7 : Real-World Projects</div>
+
+<ol>
+<li><input type="checkbox">Online Railway Ticket Booking System.</li>
+<li><input type="checkbox">ATM Machine Simulation using Threads.</li>
+<li><input type="checkbox">Restaurant Order Processing System.</li>
+<li><input type="checkbox">Traffic Signal Management System.</li>
+<li><input type="checkbox">File Download Manager using Thread Pool.</li>
+<li><input type="checkbox">Chat Server Message Processing System.</li>
+<li><input type="checkbox">Stock Market Price Monitoring System.</li>
+<li><input type="checkbox">Hospital Appointment Management System.</li>
+<li><input type="checkbox">Multi-user Online Examination System.</li>
+<li><input type="checkbox">CPU Scheduling Simulation (FCFS, Round Robin using Threads).</li>
+</ol>
+
+</body>
+</html>
